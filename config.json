@@ -1,0 +1,23 @@
+{
+  "version": "v0.34.0",
+  "temp_download_folder": "/tmp/",
+  "download_folder": "/Users/xhico/Library/CloudStorage/OneDrive-Personal/Useful",
+  "assets": [
+    {
+      "name": "linux32",
+      "filename": "geckodriver_armf"
+    },
+    {
+      "name": "linux-aarch64",
+      "filename": "geckodriver_arm64"
+    },
+    {
+      "name": "macos-aarch64",
+      "filename": "geckodriver_mac"
+    },
+    {
+      "name": "win-aarch64",
+      "filename": "geckodriver_win"
+    }
+  ]
+}
