@@ -12,6 +12,7 @@ import logging
 import requests
 import traceback
 import urllib.request
+from Misc import get911, sendEmail
 
 
 def unpackFile(file_path, extract_path):
@@ -125,6 +126,9 @@ def main():
                 shutil.rmtree(unpackFolder)
                 os.remove(tempAssetURLFile)
 
+                # Send email notification
+                sendEmail("Geckodriver Update", f"Version {tagName}")
+
                 # Break out of the inner loop as asset is found
                 break
 
@@ -153,5 +157,6 @@ if __name__ == '__main__':
         main()
     except Exception as ex:
         logger.error(traceback.format_exc())
+        sendEmail(os.path.basename(__file__), str(traceback.format_exc()))
     finally:
         logger.info("End")
