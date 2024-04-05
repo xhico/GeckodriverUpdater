@@ -1,9 +1,11 @@
 # GeckodriverUpdater
- 
+
 Downloads the latest Geckodriver JSON, selects the appropriate asset, and extracts it.
 
 ## Config
+
 Loads config from local file (Example bellow)
+
 ```
 {
   "version": "v0.34.0",
@@ -31,12 +33,15 @@ Loads config from local file (Example bellow)
 ```
 
 ## Installation
+
 ```
 python3 -m pip install -r requirements.txt --no-cache-dir
 ```
 
 ## Usage
+
 Manual
+
 ```
 python3 GeckodriverUpdater.py
 ```
